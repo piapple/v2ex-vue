@@ -1,11 +1,39 @@
 import Vue from 'vue'
+import VueRouter from "vue-router";
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 
-Vue.use(ElementUI)
+import main from './component/main.vue';
+import Sign_in from './component/sign_in.vue';
+import Sign_up from './component/sign_up.vue';
 
+Vue.use(ElementUI);
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+	mode: 'history',
+	base: __dirname,
+	routes: [
+		{
+			path:'/',
+			component:main
+		},
+		{
+			path:'/sign_in',
+			component: Sign_in
+		},
+		{
+			path:'/sign_up',
+			component: Sign_up
+		},
+		
+	
+	]
+
+})
 new Vue({
-  el: '#app',
-  render: h => h(App)
+	router:router,
+  	el: '#app',
+  	render: h => h(App)
 })

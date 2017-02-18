@@ -1,33 +1,33 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <el-button @click.native="startHacking">Let's do it</el-button>
+    <top></top>
+    <wrapper></wrapper>
   </div>
 </template>
 
 <script>
+import top from "./component/top.vue";
+import wrapper from "./component/wrapper.vue"
 export default {
+
   data () {
     return {
-      msg: 'Use Vue 2.0 Today!'
+      
     }
   },
-
-  methods: {
-    startHacking () {
-      this.$notify({
-        title: 'It Works',
-        message: 'We have laid the groundwork for you. Now it\'s your time to build something epic!',
-        duration: 6000
-      })
-    }
-  }
+  components:{top,wrapper}
 }
 </script>
 
 <style>
-body {
-  font-family: Helvetica, sans-serif;
+*{
+  padding: 0px;
+  margin: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    color: #444;
+    text-transform: none;
 }
 </style>
