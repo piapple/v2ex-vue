@@ -1,27 +1,56 @@
 {
-  "name": "element-starter",
+  "name": "v2ex-vue",
+  "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "yi.shyang@ele.me",
+  "author": "piapple <piapple@outlook.com>",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "node build/dev-server.js",
+    "build": "node build/build.js"
   },
   "dependencies": {
-    "element-ui": "^1.0.0",
-    "vue": "^2.0.5",
-    "vue-router": "^2.1.1"
+    "element-ui": "^1.1.6",
+    "vue": "^2.1.10",
+    "vue-resource": "^1.2.0",
+    "vue-router": "^2.2.0"
   },
   "devDependencies": {
-    "babel-core": "^6.0.0",
-    "babel-loader": "^6.0.0",
-    "babel-preset-es2015": "^6.13.2",
-    "cross-env": "^1.0.6",
-    "css-loader": "^0.23.1",
-    "file-loader": "^0.8.5",
+    "autoprefixer": "^6.7.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "chalk": "^1.1.3",
+    "connect-history-api-fallback": "^1.3.0",
+    "css-loader": "^0.26.1",
     "style-loader": "^0.13.1",
-    "vue-loader": "^9.8.0",
-    "webpack": "beta",
-    "webpack-dev-server": "beta"
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.14.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.2",
+    "file-loader": "^0.10.0",
+    "friendly-errors-webpack-plugin": "^1.1.3",
+    "function-bind": "^1.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "http-proxy-middleware": "^0.17.3",
+    "webpack-bundle-analyzer": "^2.2.1",
+    "semver": "^5.3.0",
+    "opn": "^4.0.2",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "ora": "^1.1.0",
+    "shelljs": "^0.7.6",
+    "url-loader": "^0.5.7",
+    "vue-loader": "^11.0.0",
+    "vue-style-loader": "^2.0.0",
+    "vue-template-compiler": "^2.1.10",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.0",
+    "webpack-hot-middleware": "^2.16.1",
+    "webpack-merge": "^2.6.1"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
   }
 }

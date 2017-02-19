@@ -24,6 +24,7 @@ export default {
   padding: 0px;
   margin: 0px;
 }
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 15px 0;
     font-weight: 400;

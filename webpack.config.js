@@ -36,9 +36,17 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.common.js'
+    }
+  },
   devServer: {
     historyApiFallback: true,
     noInfo: true
+  },
+  performance: {
+    hints: false
   },
   devtool: '#eval-source-map'
 }
@@ -53,9 +61,13 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
       compress: {
         warnings: false
       }
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true
     })
   ])
 }
