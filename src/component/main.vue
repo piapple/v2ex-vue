@@ -37,7 +37,10 @@
 				</el-col>
   				<el-col :lg="6" :md="6" :xs="0">
   					<div class="right_bar">
-  						<div class="box"></div>
+  						<div>
+  							<v2ex></v2ex>
+  							<hotopics></hotopics>
+  						</div>
   					</div>
   				</el-col>
 			</el-row>
@@ -48,6 +51,8 @@
 
 <script>
 	import show from "./show.vue";
+	import v2ex from "./v2ex.vue";
+	import hotopics from "./hotopics.vue";
 	export default {
 
 	data () {
@@ -55,7 +60,7 @@
 	      
 	    }
 	},
-  components:{show}
+  components:{show,v2ex,hotopics}
 }
 </script>
 

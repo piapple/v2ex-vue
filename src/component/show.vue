@@ -17,7 +17,7 @@
             </div>
 		</el-col>
 		<el-col :sm="4" :xs="4" align="middle"  class="notification">
-			<el-tag>3</el-tag>
+			<el-tag>{{ topic.replies }}</el-tag>
 		</el-col>
 	</el-row>
 	</div>
@@ -53,9 +53,6 @@
 </script>
 
 <style>
-	*{
-
-	}
 	.cell{
 		padding: 10px;
 		font-size: 10px;
