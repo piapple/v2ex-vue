@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <top></top>
-    <wrapper></wrapper>
+    <mainbody></mainbody>
   </div>
 </template>
 
 <script>
 import top from "./component/top.vue";
-import wrapper from "./component/wrapper.vue"
+import mainbody from "./component/mainbody.vue";
 export default {
 
   data () {
@@ -15,7 +15,7 @@ export default {
       
     }
   },
-  components:{top,wrapper}
+  components:{top,mainbody}
 }
 </script>
 

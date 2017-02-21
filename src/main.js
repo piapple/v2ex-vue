@@ -5,7 +5,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 
-import main from './component/main.vue';
+import content from './component/content.vue';
 import Sign_in from './component/sign_in.vue';
 import Sign_up from './component/sign_up.vue';
 
@@ -19,7 +19,7 @@ const router = new VueRouter({
 	routes: [
 		{
 			path:'/',
-			component:main
+			component:content
 		},
 		{
 			path:'/sign_in',
